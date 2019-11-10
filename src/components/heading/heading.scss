@@ -1,0 +1,46 @@
+@import '../../styles/imports.scss';
+
+// ================================= sizes
+.h1,
+.h2,
+.h3 {
+    line-height: 1.1em;
+}
+
+.h1 {
+    font-size: 4rem;
+}
+
+.h2 {
+    font-size: 3rem;
+}
+
+.h3 {
+    font-size: 2.2rem;
+}
+
+// ================================= weights
+.bold {
+    @include font(bold);
+}
+
+.regular {
+    @include font(regular)
+}
+
+.light {
+    @include font(light)
+}
+
+// ================================= colors
+.black {
+    color: $black;
+}
+
+.white {
+    color: $white;
+}
+
+.spot {
+    color: $spot;
+}
