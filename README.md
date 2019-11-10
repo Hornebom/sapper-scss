@@ -3,8 +3,8 @@
 Globals, mixins and variables are stored in <code>/styles</code> and are imported into layout files and components. Means variables and mixins are everywhere available. To escape scoped styling use <code>:global()</code> declaration.
 
 Very helpful reads: 
-* [article](https://medium.com/@sean_27490/svelte-sapper-with-sass-271fff662da9)
-* [svelte-preprocess](https://www.npmjs.com/package/svelte-preprocess)
+* [Svelte / Sapper with Sass! By Sean Schertell](https://medium.com/@sean_27490/svelte-sapper-with-sass-271fff662da9)
+* [Svelte Preprocess](https://www.npmjs.com/package/svelte-preprocess)
 
 ```html
 <!-- 
