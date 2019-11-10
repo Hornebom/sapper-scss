@@ -1,5 +1,5 @@
 <style lang="scss">
-    @import 'components/postList/PostList.scss';
+    @import 'components/postList/postList.scss';
 </style>
 
 <script>

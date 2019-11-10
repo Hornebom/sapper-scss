@@ -1,5 +1,5 @@
 <style lang="scss">
-    @import 'components/post/Post.scss';
+    @import 'components/post/post.scss';
 </style>
 
 <script>

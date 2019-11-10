@@ -1,13 +1,41 @@
+# Customized sapper with SCSS
+
+Globals, mixins and variables are stored in <code>/styles</code> and are imported into layout files and components. Means variables and mixins are everywhere available. To escape scoped styling use <code>:global()</code> declaration.
+
+Very helpful reads: 
+* [article](https://medium.com/@sean_27490/svelte-sapper-with-sass-271fff662da9)
+* [svelte-preprocess](https://www.npmjs.com/package/svelte-preprocess)
+
+```html
+<!-- 
+in .svelte files
+use lang attribute
+optional import of styles 
+-->
+<style lang="scss">
+    @import 'components/myComponent/myComponent.scss';
+</style>
+```
+
+```scss
+// import mixins and variables into components
+@import '../../styles/imports.scss';
+```
+
+```html
+<!-- `
+import global styles directly into
+layout files (_error.svelte, _layout.svelte) 
+-->
+<style lang="scss" global>
+	@import 'styles/global.scss';
+</style>
+```
+
+
 # sapper-template
 
 The default [Sapper](https://github.com/sveltejs/sapper) template, available for Rollup and webpack.
-
-
-# SCSS
-
-Compile scss and use `<style lang="scss">` in svelte files
-See this [article](https://medium.com/@sean_27490/svelte-sapper-with-sass-271fff662da9) for more info
-also the docs for [svelte-preprocess](https://www.npmjs.com/package/svelte-preprocess) are helpful
 
 
 ## Getting started
